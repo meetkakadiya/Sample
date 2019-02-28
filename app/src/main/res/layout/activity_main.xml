@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/grad_bg">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="30pt"
+            android:layout_height="30pt"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon1"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon1"
+            android:visibility="gone"
+           >
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="LogIn Type"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/text1"/>
+
+                <LinearLayout
+                    android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/student"
+                    android:layout_width="70pt"
+                    android:layout_height="70pt"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="80dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/btn_bg"
+                    android:backgroundTint="@color/transparent"
+                    android:src="@drawable/stud"
+                    />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Student"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/sub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80pt"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/ln1">
+
+                    <ImageButton
+                        android:id="@+id/teacher"
+                        android:layout_width="70pt"
+                        android:layout_height="70pt"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btn_bg"
+                        android:backgroundTint="@color/transparent"
+                        android:src="@drawable/teacher"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        >
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-light"
+                            android:text="Faculty"
+                            android:textAllCaps="true"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
